@@ -58,10 +58,10 @@
         <div class="section__text">
             <p class="section__text__p1"> Hello, I'm</p>
             <h1 class="title">Dennis Liang</h1>
-            <p class="section__text__p2">Undergraduate CS Student</p>
+            <p class="section__text__p2">Software Engineer & MEng Student</p>
             <div class="btn-container">
                 <button class="btn btn-color-2"
-                    onclick="window.open('./assets/Dennis_Liang_Resume_10-9-2024.pdf')">
+                    onclick="window.open('./assets/2025_7_25_Dennis_Liang_Resume.pdf')">
                     Download CV
                 </button>
                 <button class="btn btn-color-1"
@@ -101,7 +101,7 @@
                             class="icon"
                         />
                         <h3>Experience</h3>
-                        <p2>5+ years <br/>Software Development</p2>
+                        <p2>7+ years <br/>Software Development</p2>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png"
@@ -109,12 +109,12 @@
                             class="icon"
                         />
                         <h3>Education</h3>
-                        <p2>IB and High School IB Diploma <br/>
-                            Current Student at UC San Diego</p2>
+                        <p2>MEng Visual Computing and Computer Graphics at UC Berkeley<br/>
+                            BS in Computer Science at UC San Diego</p2>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>I am an enthusiastic and motivated student currently pursuing a Bachelor of Science degree in Computer Science at the University of California, San Diego. I am dedicated to honing my skills and knowledge in the realm of software development. My passion lies in creating clean, efficient, and innovative solutions through programming, and my proficiency extends to languages such as Java, Python, and C++. I am excited to leverage my technical skills and diverse experiences to excel as a software developer and make meaningful contributions to cutting-edge projects.
+                    <p>I am a dedicated software engineer currently pursuing a Master of Engineering in Visual Computing and Computer Graphics at UC Berkeley, building upon my Bachelor of Science in Computer Science from UC San Diego. With over 7 years of experience in software development, I specialize in creating robust, scalable solutions across the full technology stack. My expertise spans multiple programming languages including Java, Python, and C++, with a strong focus on both frontend and backend development. I am passionate about leveraging cutting-edge technologies to solve complex problems and deliver impactful software solutions that drive innovation.
                     </p>
                 </div>
             </div>
@@ -141,7 +141,6 @@
                             />
                             <div>
                                 <h3>HTML</h3>
-                                <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
@@ -150,8 +149,7 @@
                                 class="icon"
                             />
                             <div>
-                                <h3>CSS</h3>
-                                <p>Intermediate</p>
+                                <h3>CSS, Sass</h3>
                             </div>
                         </article>
                         <article>
@@ -161,7 +159,15 @@
                             />
                             <div>
                                 <h3>JavaScript</h3>
-                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                         <article>
+                            <img src="./assets/checkmark.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>TypeScript</h3>
                             </div>
                         </article>
                         <article>
@@ -170,8 +176,7 @@
                                 class="icon"
                             />
                             <div>
-                                <h3>Markdown</h3>
-                                <p>Intermediate</p>
+                                <h3>React</h3>
                             </div>
                         </article>
                     </div>
@@ -186,8 +191,6 @@
                             />
                             <div>
                                 <h3>Java</h3>
-                                <h5>(Swing, FX)</h4>
-                                <p>Experienced</p>
                             </div>
                         </article>
                         <article>
@@ -197,7 +200,6 @@
                             />
                             <div>
                                 <h3>Python</h3>
-                                <p>Experienced</p>
                             </div>
                         </article>
                         <article>
@@ -206,8 +208,7 @@
                                 class="icon"
                             />
                             <div>
-                                <h3>C++</h3>
-                                <p>Experienced</p>
+                                <h3>SQL, NoSQL</h3>
                             </div>
                         </article>
                         <article>
@@ -216,8 +217,8 @@
                                 class="icon"
                             />
                             <div>
-                                <h3>Git</h3>
-                                <p>Experienced</p>
+                                <h3>AWS</h3>
+                                <h4>(S3, DynamoDB, OpenSearch)</h4>
                             </div>
                         </article>
                     </div>
@@ -328,9 +329,13 @@
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2023 Dennis Liang. All Rights Reserved.</p>
+        <p>Copyright &#169; <span id="current-year"></span> Dennis Liang. All Rights Reserved.</p>
     </footer>
 
+    <script>
+        // Automatically update the copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

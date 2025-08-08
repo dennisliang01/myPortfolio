@@ -1,2 +1,16 @@
 Google Font:
 https://fonts.google.com/specimen/Poppins?query=poppins
+
+## Local Development Instructions
+
+### Using Python
+ 1. cd to path of project
+ 2. In terminal enter, ```python -m http.server 8000```
+ 3. Open browser at http://localhost:8000
+
+
+### Using Node.js
+1. Ensure Node.js is install, if not do so by   
+```npm install -g serve```
+2. Start up the server by  
+```serve .```
