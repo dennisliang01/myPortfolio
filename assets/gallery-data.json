@@ -1,0 +1,54 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "filename": "berkeley.jpg",
+      "path": "./assets/photo_gallery/berkeley.jpg",
+      "alt": "Berkeley Hills",
+      "title": "Berkeley Hills",
+      "description": "August 2025",
+      "category": "photography",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "filename": "giro_di_SF.jpg",
+      "path": "./assets/photo_gallery/giro_di_SF.jpg",
+      "alt": "Giro di San Francisco",
+      "title": "Giro di San Francisco",
+      "description": "September 2025",
+      "category": "cycling",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "filename": "yosemite.jpg",
+      "path": "./assets/photo_gallery/yosemite.jpg",
+      "alt": "Yosemite National Park",
+      "title": "Yosemite National Park",
+      "description": "August 2025",
+      "category": "photography",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "filename": "Washington.jpg",
+      "path": "./assets/photo_gallery/Washington.jpg",
+      "alt": "Washington State",
+      "title": "Washington State",
+      "description": "July 2025",
+      "category": "photography",
+      "featured": true
+    },
+        {
+      "id": 4,
+      "filename": "Berkeley_campus.jpg",
+      "path": "./assets/photo_gallery/Berkeley_campus.jpg",
+      "alt": "Berkeley Campus",
+      "title": "Berkeley Campus",
+      "description": "August 2025",
+      "category": "photography",
+      "featured": true
+    }
+  ]
+}

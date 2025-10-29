@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logos/channelLogo.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TB4YRZQHG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5TB4YRZQHG');
+    </script>
+</head>
+
+<body>
+    <!-- Top nav bar -->
+    <nav id="desktop-nav">
+        <div class="logo">Dennis Liang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#experience">Experience</a></li>
+                <li><a href="./index.html#projects">Projects</a></li>
+                <li><a href="./beyondWork.html">Beyond Work</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side hamburger nav bar -->
+    <nav id="hamburger-nav">
+        <div class="logo">Dennis Liang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="./index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="./index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="./beyondWork.html" onclick="toggleMenu()">Beyond Work</a></li>
+                <li><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="beyondWork">
+        <h3>Cycling</h3>
+    </section>
+
+    <section>
+        <h3>Photography</h3>
+        <div class="gallery" id="photoGallery">
+            <!-- Gallery images will be loaded dynamically from JSON -->
+        </div>
+    </section>
+
+    
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div id="modalCaption"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="./index.html#experience">Experience</a></li>
+                    <li><a href="./index.html#projects">Projects</a></li>
+                    <li><a href="./index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; <span id="current-year"></span> Dennis Liang. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

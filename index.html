@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="icon" href="./assets/channelLogo.png">
-    <!-- Google tag (gtag.js) -->
+    <link rel="icon" href="./assets/logos/channelLogo.png">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TB4YRZQHG"></script>
     <script>
@@ -28,11 +26,11 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="beyondWork.html">Beyond Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-
     <!-- Side hamburger nav bar -->
     <nav id="hamburger-nav">
         <div class="logo">Dennis Liang</div>
@@ -46,6 +44,7 @@
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="beyondWork.html" onclick="toggleMenu()">Beyond Work</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -53,7 +52,7 @@
 
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic-circle.png" alt="Dennis Liang profile picture" />
+            <img src="./assets/photos/profile-pic-circle.png" alt="Dennis Liang profile picture" loading="lazy" />
         </div>
         <div class="section__text">
             <p class="section__text__p1"> Hello, I'm</p>
@@ -61,7 +60,7 @@
             <p class="section__text__p2">Software Engineer & MEng Student</p>
             <div class="btn-container">
                 <button class="btn btn-color-2"
-                    onclick="window.open('./assets/2025_7_25_Dennis_Liang_Resume.pdf')">
+                    onclick="window.open('./assets/documents/2025_7_25_Dennis_Liang_Resume.pdf')">
                     Download CV
                 </button>
                 <button class="btn btn-color-1"
@@ -70,17 +69,22 @@
                 </button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+                <img src="./assets/logos/linkedin.png" alt="My LinkedIn profile"
                     class="icon"
                     onclick="location.href='https://www.linkedin.com/in/dennisbliang/'"
                 />
 
-                <img src="./assets/github.png" alt="My GitHub profile"
+                <img src="./assets/logos/github.png" alt="My GitHub profile"
                     class="icon"
                     onclick="location.href='https://github.com/dennisliang01'"
                 />
             </div>
         </div>
+        <img src="./assets/icons/arrow.png"
+            alt="Scroll to About"
+            class="icon arrow"
+            onclick="location.href='./#about'"
+        />
     </section>
 
     <section id="about">
@@ -88,15 +92,16 @@
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets/bike-pic-1-square.png"
+                <img src="./assets/photos/profile-pic.JPG"
                     alt="Profile picture"
                     class="about-pic"
+                    loading="lazy"
                 />
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png"
+                        <img src="./assets/icons/experience.png"
                             alt="Experience icon"
                             class="icon"
                         />
@@ -104,197 +109,178 @@
                         <p2>7+ years <br/>Software Development</p2>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png"
+                        <img src="./assets/icons/education.png"
                             alt="Education icon"
                             class="icon"
                         />
                         <h3>Education</h3>
-                        <p2>MEng Visual Computing and Computer Graphics at UC Berkeley<br/>
-                            BS in Computer Science at UC San Diego</p2>
+                        <p2>MEng EECS at UC Berkeley<br/>
+                            BS Computer Science at UC San Diego</p2>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>I am a dedicated software engineer currently pursuing a Master of Engineering in Visual Computing and Computer Graphics at UC Berkeley, building upon my Bachelor of Science in Computer Science from UC San Diego. With over 7 years of experience in software development, I specialize in creating robust, scalable solutions across the full technology stack. My expertise spans multiple programming languages including Java, Python, and C++, with a strong focus on both frontend and backend development. I am passionate about leveraging cutting-edge technologies to solve complex problems and deliver impactful software solutions that drive innovation.
-                    </p>
+                    <p>Engineer with a strong interest in visual computing and computer graphics, combining technical depth with creative problem-solving. Experienced in developing interactive AR/VR applications in Unity, implementing computer vision and rendering techniques, and exploring how visual systems can enhance human understanding. Passionate about building efficient, visually compelling software that connects perception, visualization, and technology.</p>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png"
-            alt="Arrow icon"
-            class="icon arrow" 
-            onclick="location.href='./#experience'"
-        />
     </section>
 
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
+        <p class="section__text__p1">My</p>
         <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>CSS, Sass</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                            </div>
-                        </article>
-                         <article>
-                            <img src="./assets/checkmark.png" 
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>TypeScript</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>React</h3>
-                            </div>
-                        </article>
+            <div class="xp-grid">
+                <div class="details-container xp-card">
+                    <img src="./assets/logos/amazon_logo.png" alt="Company logo" class="xp-logo" loading="lazy" />
+                    <div class="xp-content">
+                        <h3>Software Development Engineer Intern</h3>
+                        <p class="xp-meta">Amazon • Seattle, WA</p>
+                        <ul class="xp-list">
+                            <li>Designed and implemented a targeting service to segment sellers, aiming to reduce 45,000+ annual hours spent on manual segment list creation</li>
+                            <li>Built and deployed scalable backend systems using AWS services including OpenSearch Service, DynamoDB, S3, ECS, and EC2.</li>
+                            <li>Collaborated cross-functionally to integrate the service into internal workflows while maintaining security and operational best practices.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Java</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Python</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>SQL, NoSQL</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>AWS</h3>
-                                <h4>(S3, DynamoDB, OpenSearch)</h4>
-                            </div>
-                        </article>
+                <div class="details-container xp-card">
+                    <img src="./assets/logos/robolink_logo.jpg" alt="Company logo" class="xp-logo" loading="lazy" />
+                    <div class="xp-content">
+                        <h3>Software Engineering Intern</h3>
+                        <p class="xp-meta">Robolink • San Diego, CA</p>
+                        <ul class="xp-list">
+                            <li>Launched and enhanced Robolink’s Web Python editor using React Pyodide: Identifying and resolving critical issues, improving functionality and user experience, contributing to a successful launch.</li>
+                            <li>Tested and implemented improvements for drone systems: Conducting comprehensive testing on drones, fixing software bugs, and developing a new dashboard system to streamline classroom learning management and enhance educational experiences.</li>
+                            <li>Streamlined the development pipeline from coding and testing to deploying new features, ensuring consistent performance improvements and maintaining high-quality standards across the software.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="details-container xp-card">
+                    <img src="./assets/logos/ucsd_logo.png" alt="Company logo" class="xp-logo" loading="lazy" />
+                    <div class="xp-content">
+                        <h3>Undergraduate Research Assistant</h3>
+                        <p class="xp-meta">UC San Diego Center for Visual Computing • San Diego, CA</p>
+                        <ul class="xp-list">
+                            <li>Assisted in visual reconstruction research by developing/optimizing imaging algorithms and testing FLIR Blackfly S camera software, significantly improving image quality.</li>
+                            <li>Calibrated advanced imaging equipment and managed complex setups to ensure experimental accuracy and efficient data collection.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <img src="./assets/arrow.png"
-            alt="Arrow icon"
-            class="icon arrow" 
-            onclick="location.href='./#projects'"
-        />
-    </section>
+        </section>
 
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/sayItAssistantAd.png"
-                        alt="Project 1"
-                        class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Say-It Chat Assitant</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/ucsd-cse110-sp23/cse-110-project-team-14'"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            GitHub
-                        </button>
+            <div class="project-grid">
+                 <div class="details-container project-card">
+                    <img src="./assets/projects/meta_quest_3s.jpg" alt="UCSD Cycling Team Website logo" class="project-thumb" loading="lazy" />
+                    <div class="project-content">
+                        <h3>Virtual Reality Based Learning Environment</h3>
+                        <p class="project-meta">Open-source contribution</p>
+                        <p class="project-desc">Improved the team site structure and content for better readability and updates.</p>
+                        <ul class="project-highlights">
+                            <li>Refined layout for clarity and maintainability.</li>
+                            <li>Enhanced content organization for visitors.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/usaCyclingLogoSquare.png"
-                        alt="Project 2"
-                        class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Cycling Points Calculator</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/dennisliang01/bikeRacePointsCalculator'"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            GitHub
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/ucsdCyclingLogoSquare.png"
-                        alt="Project 3"
-                        class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">UCSD Cycling Team Website</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/UCSD-Cycling/ucsd-cycling.github.io'"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            GitHub
-                        </button>
+
+                 <div class="details-container project-card">
+                    <img src="./assets/projects/volumteric_path_tracer.png" alt="UCSD Cycling Team Website logo" class="project-thumb" loading="lazy" />
+                    <div class="project-content">
+                        <h3>Volumetric Path Tracer</h3>
+                        <p class="project-meta">Open-source contribution</p>
+                        <p class="project-desc">Improved the team site structure and content for better readability and updates.</p>
+                        <ul class="project-highlights">
+                            <li>Refined layout for clarity and maintainability.</li>
+                            <li>Enhanced content organization for visitors.</li>
+                        </ul>
+                        <div class="btn-container project-actions">
+                            <a class="btn btn-color-2 project-btn" href="https://sites.google.com/ucsd.edu/cse-168-final-project/home" target="_blank" rel="noopener noreferrer">Project Page</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="details-container project-card">
+                    <img src="./assets/projects/ray_tracer.png" alt="UCSD Cycling Team Website logo" class="project-thumb" loading="lazy" />
+                    <div class="project-content">
+                        <h3>Ray Tracer</h3>
+                        <p class="project-meta">Open-source contribution</p>
+                        <p class="project-desc">Improved the team site structure and content for better readability and updates.</p>
+                        <ul class="project-highlights">
+                            <li>Refined layout for clarity and maintainability.</li>
+                            <li>Enhanced content organization for visitors.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="details-container project-card">
+                    <img src="./assets/projects/zooseeker.png" alt="UCSD Cycling Team Website logo" class="project-thumb"
+                        loading="lazy" />
+                    <div class="project-content">
+                        <h3>Zoo Seeker</h3>
+                        <p class="project-meta">Open-source contribution</p>
+                        <p class="project-desc">Improved the team site structure and content for better readability and updates.</p>
+                        <ul class="project-highlights">
+                            <li>Refined layout for clarity and maintainability.</li>
+                            <li>Enhanced content organization for visitors.</li>
+                        </ul>
+                        <div class="btn-container project-actions">
+                            <a class="btn btn-color-2 project-btn" href="https://github.com/UCSD-Cycling/ucsd-cycling.github.io"
+                                target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container project-card">
+                    <img src="./assets/projects/sayItAssistantAd.png" alt="Say-It Chat Assistant preview" class="project-thumb" loading="lazy" />
+                    <div class="project-content">
+                        <h3>Say‑It Chat Assistant</h3>
+                        <p class="project-meta">Team project</p>
+                        <p class="project-desc">Voice‑enabled chat assistant with a clean, accessible interface for quick interactions.</p>
+                        <ul class="project-highlights">
+                            <li>Owned core UI flows and state management.</li>
+                            <li>Focused on usability and responsive behavior.</li>
+                        </ul>
+                        <div class="btn-container project-actions">
+                            <a class="btn btn-color-2 project-btn" href="https://github.com/ucsd-cse110-sp23/cse-110-project-team-14" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-container project-card">
+                    <img src="./assets/logos/usaCyclingLogoSquare.png" alt="Cycling Points Calculator logo" class="project-thumb" loading="lazy" />
+                    <div class="project-content">
+                        <h3>Cycling Points Calculator</h3>
+                        <p class="project-meta">Solo project</p>
+                        <p class="project-desc">Tool to compute and visualize USA Cycling points for fast, accurate lookups.</p>
+                        <ul class="project-highlights">
+                            <li>Streamlined inputs and clear, readable results.</li>
+                            <li>Built for reliability and quick performance.</li>
+                        </ul>
+                        <div class="btn-container project-actions">
+                            <a class="btn btn-color-2 project-btn" href="https://github.com/dennisliang01/bikeRacePointsCalculator" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-container project-card">
+                    <img src="./assets/logos/ucsdCyclingLogoSquare.png" alt="UCSD Cycling Team Website logo" class="project-thumb" loading="lazy" />
+                    <div class="project-content">
+                        <h3>UCSD Cycling Team Website</h3>
+                        <p class="project-meta">Open-source contribution</p>
+                        <p class="project-desc">Improved the team site structure and content for better readability and updates.</p>
+                        <ul class="project-highlights">
+                            <li>Refined layout for clarity and maintainability.</li>
+                            <li>Enhanced content organization for visitors.</li>
+                        </ul>
+                        <div class="btn-container project-actions">
+                            <a class="btn btn-color-2 project-btn" href="https://github.com/UCSD-Cycling/ucsd-cycling.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
         </div>
-        <img src="./assets/arrow.png"
-            alt="Arrow icon"
-            class="icon arrow" 
-            onclick="location.href='./#contact'"
-        />
     </section>
     
     <section id="contact">
@@ -302,17 +288,11 @@
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assets/email.png"
-                    alt="Email icon"
-                    class="icon contact-icon"
-                />
+                <img src="./assets/icons/email.png" alt="Email icon" class="icon contact-icon" />
                 <p><a href="mailto:dennisliang01@gmail.com">dennisliang01@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin.png"
-                    alt="LinkedIn icon"
-                    class="icon contact-icon"
-                />
+                <img src="./assets/logos/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
                 <p><a href="https://www.linkedin.com/in/dennisbliang/">LinkedIn</a></p>
             </div>
         </div>
@@ -332,10 +312,8 @@
         <p>Copyright &#169; <span id="current-year"></span> Dennis Liang. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        // Automatically update the copyright year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
+
+

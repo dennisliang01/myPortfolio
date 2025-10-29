@@ -14,3 +14,7 @@ https://fonts.google.com/specimen/Poppins?query=poppins
 ```npm install -g serve```
 2. Start up the server by  
 ```serve .```
+
+
+### Live Updates
+```live-server --port=3000 --open=index.html```
