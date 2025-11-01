@@ -60,7 +60,7 @@
             <p class="section__text__p2">Software Engineer & MEng Student</p>
             <div class="btn-container">
                 <button class="btn btn-color-2"
-                    onclick="window.open('./assets/documents/2025_7_25_Dennis_Liang_Resume.pdf')">
+                    onclick="window.open('./assets/documents/Dennis_Liang_Resume.pdf')">
                     Download CV
                 </button>
                 <button class="btn btn-color-1"
@@ -172,15 +172,28 @@
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
             <div class="project-grid">
-                 <div class="details-container project-card">
+                <div class="details-container project-card">
                     <img src="./assets/projects/meta_quest_3s.jpg" alt="UCSD Cycling Team Website logo" class="project-thumb" loading="lazy" />
                     <div class="project-content">
                         <h3>Virtual Reality Based Learning Environment</h3>
-                        <p class="project-meta">Open-source contribution</p>
                         <p class="project-desc">Improved the team site structure and content for better readability and updates.</p>
                         <ul class="project-highlights">
-                            <li>Refined layout for clarity and maintainability.</li>
-                            <li>Enhanced content organization for visitors.</li>
+                            <li>Contributed to the development of immersive, interactive VR modules for STEM education.</li>
+                            <li>Improved scene hierarchy and code modularity to support multi-topic lesson extensions.</li>
+                            <li>Collaborated with designers to refine UI/UX for classroom deployment readiness.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="details-container project-card">
+                    <img src="./assets/projects/ferris.png" alt="UCSD Cycling Team Website logo" class="project-thumb" loading="lazy" />
+                    <div class="project-content">
+                        <h3>Ferris - AI Travel Agent</h3>
+                        <p class="project-desc">Improved the team site structure and content for better readability and updates.</p>
+                        <ul class="project-highlights">
+                            <li>Developed core UI components for trip planning and natural-language interaction.</li>
+                            <li>Integrated Gemini and Deepgram API for personalized destination suggestions and real-time itinerary updates.</li>
+                            <li>Optimized FastAPI backend for faster query response times.</li>
                         </ul>
                     </div>
                 </div>
@@ -189,11 +202,11 @@
                     <img src="./assets/projects/volumteric_path_tracer.png" alt="UCSD Cycling Team Website logo" class="project-thumb" loading="lazy" />
                     <div class="project-content">
                         <h3>Volumetric Path Tracer</h3>
-                        <p class="project-meta">Open-source contribution</p>
                         <p class="project-desc">Improved the team site structure and content for better readability and updates.</p>
                         <ul class="project-highlights">
-                            <li>Refined layout for clarity and maintainability.</li>
-                            <li>Enhanced content organization for visitors.</li>
+                            <li>Implemented Monte Carlo–based volumetric light transport for realistic fog and scattering effects.</li>
+                            <li>Designed acceleration structures to improve rendering performance and reduce noise.</li>
+                            <li>Validated renderer results using Cornell box and custom participating media scenes.</li>
                         </ul>
                         <div class="btn-container project-actions">
                             <a class="btn btn-color-2 project-btn" href="https://sites.google.com/ucsd.edu/cse-168-final-project/home" target="_blank" rel="noopener noreferrer">Project Page</a>
@@ -205,28 +218,28 @@
                     <img src="./assets/projects/ray_tracer.png" alt="UCSD Cycling Team Website logo" class="project-thumb" loading="lazy" />
                     <div class="project-content">
                         <h3>Ray Tracer</h3>
-                        <p class="project-meta">Open-source contribution</p>
                         <p class="project-desc">Improved the team site structure and content for better readability and updates.</p>
                         <ul class="project-highlights">
-                            <li>Refined layout for clarity and maintainability.</li>
-                            <li>Enhanced content organization for visitors.</li>
+                            <li>Built a physically-based ray tracing engine supporting reflections, refractions, and shadows.</li>
+                            <li>Implemented BVH acceleration to achieve real-time performance on test scenes.</li>
+                            <li>Added tone mapping and anti-aliasing to improve visual fidelity and rendering quality.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="details-container project-card">
-                    <img src="./assets/projects/zooseeker.png" alt="UCSD Cycling Team Website logo" class="project-thumb"
+                    <img src="./assets/projects/zooseeker.png" alt="Zooseeker logo" class="project-thumb"
                         loading="lazy" />
                     <div class="project-content">
                         <h3>Zoo Seeker</h3>
-                        <p class="project-meta">Open-source contribution</p>
                         <p class="project-desc">Improved the team site structure and content for better readability and updates.</p>
                         <ul class="project-highlights">
-                            <li>Refined layout for clarity and maintainability.</li>
-                            <li>Enhanced content organization for visitors.</li>
+                            <li>Led Android app development to plan optimized zoo routes using Dijkstra’s algorithm.</li>
+                            <li>Designed intuitive UI for animal selection, route visualization, and real-time navigation.</li>
+                            <li>Managed data persistence and location updates using MVVM and Android Jetpack components.</li>
                         </ul>
                         <div class="btn-container project-actions">
-                            <a class="btn btn-color-2 project-btn" href="https://github.com/UCSD-Cycling/ucsd-cycling.github.io"
+                            <a class="btn btn-color-2 project-btn" href="https://github.com/dennisliang01/zooseeker"
                                 target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
@@ -238,6 +251,7 @@
                         <p class="project-meta">Team project</p>
                         <p class="project-desc">Voice‑enabled chat assistant with a clean, accessible interface for quick interactions.</p>
                         <ul class="project-highlights">
+                            <li>Managed conversation state and accessibility features for seamless user experience.</li>
                             <li>Owned core UI flows and state management.</li>
                             <li>Focused on usability and responsive behavior.</li>
                         </ul>
@@ -254,12 +268,10 @@
                         <p class="project-meta">Solo project</p>
                         <p class="project-desc">Tool to compute and visualize USA Cycling points for fast, accurate lookups.</p>
                         <ul class="project-highlights">
-                            <li>Streamlined inputs and clear, readable results.</li>
-                            <li>Built for reliability and quick performance.</li>
+                            <li>Developed a Python-based web app to calculate USA Cycling upgrade points instantly.</li>
+                            <li>Visualized race results and point thresholds with interactive charting libraries.</li>
+                            <li>Automated data input and verification to minimize user error and manual lookup time.</li>
                         </ul>
-                        <div class="btn-container project-actions">
-                            <a class="btn btn-color-2 project-btn" href="https://github.com/dennisliang01/bikeRacePointsCalculator" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        </div>
                     </div>
                 </div>
 
@@ -270,8 +282,9 @@
                         <p class="project-meta">Open-source contribution</p>
                         <p class="project-desc">Improved the team site structure and content for better readability and updates.</p>
                         <ul class="project-highlights">
-                            <li>Refined layout for clarity and maintainability.</li>
-                            <li>Enhanced content organization for visitors.</li>
+                            <li>Modernized the team website with updated race reports, officer profiles, and sponsor pages.</li>
+                            <li>Improved site performance and responsiveness with streamlined CSS and layout refactor.</li>
+                            <li>Collaborated via GitHub to coordinate open-source contributions and content updates.</li>
                         </ul>
                         <div class="btn-container project-actions">
                             <a class="btn btn-color-2 project-btn" href="https://github.com/UCSD-Cycling/ucsd-cycling.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -298,19 +311,20 @@
         </div>
     </section>
 
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; <span id="current-year"></span> Dennis Liang. All Rights Reserved.</p>
-    </footer>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="beyondWork.html">Beyond Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; <span id="current-year"></span> Dennis Liang. All Rights Reserved.</p>
+        </footer>
 
     <script src="script.js"></script>
 </body>

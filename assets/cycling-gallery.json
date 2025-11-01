@@ -1,0 +1,49 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "filename": "bike_pic_1.jpg",
+      "path": "./assets/photos/cycling/bike_pic_1.jpg",
+      "alt": "Bike picture",
+      "title": "Mt. Tabor July 2023",
+      "description": "",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "filename": "nationals1.jpeg",
+      "path": "./assets/photos/cycling/nationals1.jpeg",
+      "alt": "Nationals 1",
+      "title": "Nationals May 2025",
+      "description": "",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "filename": "nationals2.jpeg",
+      "path": "./assets/photos/cycling/nationals2.jpeg",
+      "alt": "Nationals 2",
+      "title": "Nationals May 2025",
+      "description": "",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "filename": "nationals4.jpg",
+      "path": "./assets/photos/cycling/nationals4.jpg",
+      "alt": "Nationals 4",
+      "title": "Nationals May 2025",
+      "description": "",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "filename": "fiestaTT.jpg",
+      "path": "./assets/photos/cycling/fiestaTT.jpeg",
+      "alt": "Fiesta Island Time Trial",
+      "title": "Fiesta Island Time Trial February 2024",
+      "description": "",
+      "featured": true
+    }
+  ]
+}

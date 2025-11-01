@@ -51,11 +51,20 @@
         </div>
     </nav>
     <section id="beyondWork">
-        <h3>Cycling</h3>
+        <h3 class="section-title">Cycling</h3>
+        <div class="carousel" id="cyclingCarousel" aria-label="Cycling photo carousel">
+            <button class="carousel-btn prev" id="cyclingPrev" aria-label="Previous image">&#10094;</button>
+            <div class="carousel-viewport">
+                <div class="carousel-track" id="cyclingTrack">
+                    <!-- Cycling images will be injected here -->
+                </div>
+            </div>
+            <button class="carousel-btn next" id="cyclingNext" aria-label="Next image">&#10095;</button>
+        </div>
     </section>
 
     <section>
-        <h3>Photography</h3>
+        <h3 class="section-title">Photography</h3>
         <div class="gallery" id="photoGallery">
             <!-- Gallery images will be loaded dynamically from JSON -->
         </div>
@@ -71,19 +80,20 @@
         </div>
     </div>
     
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="./index.html#about">About</a></li>
-                    <li><a href="./index.html#experience">Experience</a></li>
-                    <li><a href="./index.html#projects">Projects</a></li>
-                    <li><a href="./index.html#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; <span id="current-year"></span> Dennis Liang. All Rights Reserved.</p>
-    </footer>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="./index.html#about">About</a></li>
+                        <li><a href="./index.html#experience">Experience</a></li>
+                        <li><a href="./index.html#projects">Projects</a></li>
+                        <li><a href="./beyondWork.html">Beyond Work</a></li>
+                        <li><a href="./index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; <span id="current-year"></span> Dennis Liang. All Rights Reserved.</p>
+        </footer>
 
     <script src="script.js"></script>
 </body>
