@@ -44,6 +44,15 @@
       "title": "Fiesta Island Time Trial February 2024",
       "description": "",
       "featured": true
+    },
+    {
+      "id": 6,
+      "filename": "CBR.jpg",
+      "path": "./assets/photos/cycling/CBR.jpg",
+      "alt": "CBR",
+      "title": "CBR 2025",
+      "description": "",
+      "featured": true
     }
   ]
 }
